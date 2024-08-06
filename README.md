@@ -1,6 +1,6 @@
 # Ainda Sendo desenvolvido
-## o faz o projeto
-O projeto que será um "Gerenciador de projetos".
-Onde poderá adcionar novos projetos adcionando custos e orçamentos, podendo edita-los mudando o custo e descrição e excluir o projeto.
+## o que faz o projeto
+O projeto será um "Gerenciador de projetos", onde será possível adicionar novos projetos, incluindo custos e orçamentos.
+Será possível editar os projetos, alterando o custo e a descrição, além de excluir o projeto.
 ## Qual o intuito
-O intuito do projeto e aplicar os conhecimentos adquiridos no curso (Curso de react - Hora de Codar do Matheus Basttisti).
+O intuito do projeto é aplicar os conhecimentos adquiridos no curso (Curso de React - Hora de Codar, do Matheus Battisti).

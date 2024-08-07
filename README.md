@@ -19,3 +19,7 @@ e no segundo terminal sera do Back-End, assim faz o seguinte comando:
 ```bash
 npm run backend
 ```
+## Caso dado Algum erro
+O node que esta sendo ultilizado é a versão: v16.14.0
+e a versão do npm é: 8.3.1 
+e a versão do React é: 18.3.1  

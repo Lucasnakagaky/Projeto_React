@@ -19,6 +19,7 @@ e no segundo terminal sera do Back-End, assim faz o seguinte comando:
 ```bash
 npm run backend
 ```
+O Back-end esta na porta 5000 caso tenha algum problema.
 ## Caso dado Algum erro
 O node que esta sendo ultilizado é a versão: v16.14.0
 e a versão do npm é: 8.3.1 

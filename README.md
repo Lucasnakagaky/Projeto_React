@@ -5,7 +5,8 @@ podendo editá-los, alterando o custo e a descrição, além de excluir o projet
 ## Qual foi intuito
 O intuito do projeto é aplicar os conhecimentos adquiridos no curso (Curso de React - Hora de Codar, do Matheus Battisti).
 ## instrução de inicialização
-###Os passo a passo a seguir supondo como ja tiver no instalado no PC o Node, react.
+### Os passo a passo a seguir supondo como ja tiver no instalado no PC o Node, react.
+
 Abra dois terminais em ambos terminais vão para pasta "costs"
 ```bash
 cd ./costs/

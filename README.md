@@ -11,7 +11,7 @@ Abra dois terminais em ambos terminais vão para pasta "costs"
 ```bash
 cd ./costs/
 ```
-Após esse processo no primeiro terminal sera responsavel pelo Front-End, assim faz o seguinte comando:
+Após esse processo no primeiro terminal será responsavel pelo Front-End, assim faz o seguinte comando:
 ```bash
 npm start
 ```

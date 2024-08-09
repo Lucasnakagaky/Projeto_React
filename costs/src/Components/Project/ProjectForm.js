@@ -1,35 +1,75 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
-import styles from './ProjectForm.module.css'
-import Input from '../Form/Input'
-import Select from '../Form/Select'
-import SubmitButton from '../Form/SubmitButton'
+import styles from "./ProjectForm.module.css";
+import Input from "../Form/Input";
+import Select from "../Form/Select";
+import SubmitButton from "../Form/SubmitButton";
 
-function ProjectForm({ btnText }) {
+function ProjectForm({ handleSubmit, btnText, projectData }) {
+  const [categories, setcategories] = useState([]);
+  const [project, setProject] = useState(projectData || {});
 
-    const [categories, setcategories] = useState([])
+  useEffect(() => {
+    fetch("http://localhost:5000/categories", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setcategories(data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
-    useEffect(() => {
-        fetch('http://localhost:5000/categories', {
-            method: "GET",
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        }).then((resp) => resp.json())
-            .then((data) => {
-                setcategories(data)
-            })
-            .catch(err => console.log(err))
-    }, [])
+  const submit = (e) => {
+    e.preventDefault();
+    handleSubmit(project);
+  };
 
-    return (
-        <form className={styles.form}>
-            <Input type="text" text="Nome do projeto" name="name" placeholder="Insira o nome do projeto" />
-            <Input type="number" text="Orçamento do projeto" name="budget" placeholder="Insira o orçamento total" />
-            <Select name="category_id" text="Selecione a categoria" options={categories} />
-            <SubmitButton text={btnText} />
-        </form>
-    )
+  function handleChange(e) {
+    setProject({ ...project, [e.target.name]: e.target.value });
+  }
+
+  function handleCategory(e) {
+    setProject({
+      ...project,
+      category: {
+        id: e.target.value,
+        nome: e.target.options[e.target.selectedIndex].text,
+      },
+    });
+  }
+
+  return (
+    <form onSubmit={submit} className={styles.form}>
+      <Input
+        type="text"
+        text="Nome do projeto"
+        name="name"
+        placeholder="Insira o nome do projeto"
+        handleOnChange={handleChange}
+        value={project.name ? project.name : ""}
+      />
+      <Input
+        type="number"
+        text="Orçamento do projeto"
+        name="budget"
+        placeholder="Insira o orçamento total"
+        handleOnChange={handleChange}
+        value={project.budget ? project.budget : ""}
+      />
+      <Select
+        name="category_id"
+        text="Selecione a categoria"
+        options={categories}
+        handleOnChange={handleCategory}
+        value={project.category ? project.category.id : ""}
+      />
+      <SubmitButton text={btnText} />
+    </form>
+  );
 }
 
-export default ProjectForm
+export default ProjectForm;

@@ -1,21 +1,99 @@
 {
-    "projects": [],
-    "categories": [
-        {
-            "id": 1,
-            "name": "Infra"
-        },
-        {
-            "id": 2,
-            "name": "Desenvolvimento"
-        },
-        {
-            "id": 3,
-            "name": "Design"
-        },
-        {
-            "id": 4,
-            "name": "Planejamento"
-        }
-    ]
+  "projects": [
+    {
+      "id": "d106",
+      "name": "Lucas nakagaky",
+      "budget": "1234",
+      "category": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "e10a",
+      "name": "Lucas nakagaky",
+      "budget": "123",
+      "category": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "1a17",
+      "name": "Lucas nakagaky",
+      "budget": "123",
+      "category": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "a72c",
+      "name": "Lucas nakagaky",
+      "budget": "123",
+      "category": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "f9f6",
+      "name": "Lucas nakagaky",
+      "budget": "123",
+      "category": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "82cd",
+      "name": "Lucas nakagaky",
+      "budget": "123",
+      "category": {
+        "id": "1",
+        "nome": "Infra"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "6104",
+      "name": "Lucas nakagaky",
+      "budget": "123",
+      "category": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Infra"
+    },
+    {
+      "id": "2",
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": "3",
+      "name": "Design"
+    },
+    {
+      "id": "4",
+      "name": "Planejamento"
+    }
+  ]
 }
